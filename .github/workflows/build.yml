@@ -2,7 +2,7 @@ name: build
 
 on:
   push:
-    branches: [master]
+    branches: [master, 5.0-servarr]
   pull_request:
     branches: ["*"]
 
