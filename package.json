@@ -1,7 +1,7 @@
 {
-  "name": "ajv-cli",
-  "version": "5.0.0",
-  "description": "Command line interface for Ajv JSON schema validator",
+  "name": "ajv-cli-servarr",
+  "version": "5.0.1",
+  "description": "Command line interface for Ajv JSON schema validator, Servarr Edition",
   "scripts": {
     "build": "rimraf dist && tsc",
     "prepublish": "npm run build",
@@ -27,11 +27,11 @@
     "ajv": "dist/index.js"
   },
   "preferGlobal": true,
-  "author": "Jesse Collis <jesse@jcmultimedia.com.au>",
+  "author": "Team Servarr <development@lidarr.audio>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ajv-validator/ajv-cli"
+    "url": "https://github.com/servarr/ajv-cli"
   },
   "dependencies": {
     "ajv": "^8.0.0",
