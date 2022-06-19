@@ -52,7 +52,7 @@ export default function (argv: ParsedArgs): AjvCore {
       const schema = util.openFile(file, fileType)
       try {
         ajv[method](schema)
-      } catch (err) {
+      } catch (err: any) {
         console.error(`${fileType} ${file} is invalid`)
         console.error(`error: ${(err as Error).message}`)
         invalid = true
@@ -71,7 +71,7 @@ export default function (argv: ParsedArgs): AjvCore {
         } else {
           require(file)(ajv)
         }
-      } catch (err) {
+      } catch (err: any) {
         console.error(`module ${file} is invalid; it should export function`)
         console.error(`error: ${(err as Error).message}`)
         invalid = true
